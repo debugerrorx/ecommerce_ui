@@ -1,5 +1,6 @@
-import 'package:ecommerce_ui/utils/constants.dart';
 import 'package:flutter/material.dart';
+
+import '../../../utils/constants.dart';
 
 class Categories extends StatelessWidget {
   const Categories({Key? key}) : super(key: key);

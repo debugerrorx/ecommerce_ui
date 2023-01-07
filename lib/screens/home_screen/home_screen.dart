@@ -1,8 +1,8 @@
-import 'package:ecommerce_ui/mocks/mock_data.dart';
-import 'package:ecommerce_ui/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import '../../mocks/mock_data.dart';
+import '../../utils/constants.dart';
 import 'components/categories.dart';
 import 'components/products.dart';
 

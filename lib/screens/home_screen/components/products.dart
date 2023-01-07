@@ -1,9 +1,10 @@
-import 'package:ecommerce_ui/mocks/mock_data.dart';
-import 'package:ecommerce_ui/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+import '../../../mocks/mock_data.dart';
 import '../../../models/product.dart';
+import '../../../utils/constants.dart';
+import '../../details_screen/details_screen.dart';
 
 class Products extends StatelessWidget {
   final String title;
@@ -143,7 +144,13 @@ class Products extends StatelessWidget {
               child: Material(
                 color: Colors.transparent,
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (_) => DetailsScreen(product: product),
+                      ),
+                    );
+                  },
                 ),
               ),
             ),
