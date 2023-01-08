@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../mocks/mock_data.dart';
 import '../../utils/constants.dart';
+import '../checkout_screen/checkout_screen.dart';
 import 'components/categories.dart';
 import 'components/products.dart';
 
@@ -29,7 +30,13 @@ class HomeScreen extends StatelessWidget {
           ),
           const SizedBox(width: 12),
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => const CheckoutScreen(),
+                ),
+              );
+            },
             icon: const Icon(
               FontAwesomeIcons.cartShopping,
             ),
